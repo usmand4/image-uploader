@@ -14,7 +14,7 @@
           <button @click="captureImage" id="captureButton">Capture Image</button>
       </div>
       <div class="getImage">
-          <div v-for="(image) in images" :key="image.id" class="image-container">
+          <div v-for="image in images" :key="image.id" class="image-container">
               {{ console.log(image.path) }}
               <img :src="getImageUrl(image.path)" alt="Image not found" class="image">
           </div>
